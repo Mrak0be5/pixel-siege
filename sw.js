@@ -1,8 +1,8 @@
 // Service worker of the published Pixel Siege (PLAN_30H № 20): the game opens offline from the home screen.
 // The page is one file, so navigation goes to the network first (a new version arrives as soon as there is a
 // connection) and falls back to the cached copy; icons and the manifest come from the cache.
-// tools/publish.py --pwa replaces 27efcf1e8e89 with the build's checksum: a new build is a new worker and a new cache.
-const CACHE = 'pixel-siege-27efcf1e8e89';
+// tools/publish.py --pwa replaces 4e3dfa0a7ea6 with the build's checksum: a new build is a new worker and a new cache.
+const CACHE = 'pixel-siege-4e3dfa0a7ea6';
 const SHELL = ['./', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png'];
 
 self.addEventListener('install', (e) => {
